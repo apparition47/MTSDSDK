@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73AD69A225CA7D6000DAE425 /* MTSDSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AD699825CA7D6000DAE425 /* MTSDSDK.framework */; };
+		73AD69A725CA7D6000DAE425 /* MTSDSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD69A625CA7D6000DAE425 /* MTSDSDKTests.swift */; };
+		73AD69B525CA7D9B00DAE425 /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD69B425CA7D9B00DAE425 /* RestRequest.swift */; };
+		73AD69B925CA7DF200DAE425 /* MTSD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD69B825CA7DF200DAE425 /* MTSD.swift */; };
+		73AD69C325CA819C00DAE425 /* GitHubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD69C225CA819C00DAE425 /* GitHubClient.swift */; };
+		73AD69C725CA865700DAE425 /* RestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD69C625CA865700DAE425 /* RestError.swift */; };
+		73AD69CB25CA926800DAE425 /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD69CA25CA926800DAE425 /* RestResponse.swift */; };
+		73AD69D525CA9D5800DAE425 /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD69D425CA9D5800DAE425 /* ParserTests.swift */; };
+		73AD69FC25CAB17700DAE425 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD69FB25CAB17700DAE425 /* Package.swift */; };
+		73AD6A1E25CACF3500DAE425 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 73AD6A1C25CACF3500DAE425 /* success.json */; };
+		73AD6A1F25CACF3500DAE425 /* failure.json in Resources */ = {isa = PBXBuildFile; fileRef = 73AD6A1D25CACF3500DAE425 /* failure.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73AD69A325CA7D6000DAE425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73AD698F25CA7D5F00DAE425 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73AD699725CA7D6000DAE425;
+			remoteInfo = MTSDSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		73AD699825CA7D6000DAE425 /* MTSDSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTSDSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73AD699C25CA7D6000DAE425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73AD69A125CA7D6000DAE425 /* MTSDSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTSDSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73AD69A625CA7D6000DAE425 /* MTSDSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSDSDKTests.swift; sourceTree = "<group>"; };
+		73AD69A825CA7D6000DAE425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73AD69B425CA7D9B00DAE425 /* RestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestRequest.swift; sourceTree = "<group>"; };
+		73AD69B825CA7DF200DAE425 /* MTSD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSD.swift; sourceTree = "<group>"; };
+		73AD69C225CA819C00DAE425 /* GitHubClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubClient.swift; sourceTree = "<group>"; };
+		73AD69C625CA865700DAE425 /* RestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestError.swift; sourceTree = "<group>"; };
+		73AD69CA25CA926800DAE425 /* RestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestResponse.swift; sourceTree = "<group>"; };
+		73AD69D425CA9D5800DAE425 /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
+		73AD69EA25CAB15D00DAE425 /* MTSDSDKPackageDescription.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTSDSDKPackageDescription.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73AD69FB25CAB17700DAE425 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		73AD6A1C25CACF3500DAE425 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
+		73AD6A1D25CACF3500DAE425 /* failure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = failure.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73AD699525CA7D6000DAE425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73AD699E25CA7D6000DAE425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73AD69A225CA7D6000DAE425 /* MTSDSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73AD698E25CA7D5F00DAE425 = {
+			isa = PBXGroup;
+			children = (
+				73AD69FB25CAB17700DAE425 /* Package.swift */,
+				73AD699A25CA7D6000DAE425 /* MTSDSDK */,
+				73AD69A525CA7D6000DAE425 /* MTSDSDKTests */,
+				73AD699925CA7D6000DAE425 /* Products */,
+				73AD6A0025CAB29700DAE425 /* Sources */,
+			);
+			sourceTree = "<group>";
+		};
+		73AD699925CA7D6000DAE425 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73AD699825CA7D6000DAE425 /* MTSDSDK.framework */,
+				73AD69A125CA7D6000DAE425 /* MTSDSDKTests.xctest */,
+				73AD69EA25CAB15D00DAE425 /* MTSDSDKPackageDescription.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73AD699A25CA7D6000DAE425 /* MTSDSDK */ = {
+			isa = PBXGroup;
+			children = (
+				73AD699C25CA7D6000DAE425 /* Info.plist */,
+			);
+			path = MTSDSDK;
+			sourceTree = "<group>";
+		};
+		73AD69A525CA7D6000DAE425 /* MTSDSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				73AD69A825CA7D6000DAE425 /* Info.plist */,
+				73AD69A625CA7D6000DAE425 /* MTSDSDKTests.swift */,
+				73AD69D425CA9D5800DAE425 /* ParserTests.swift */,
+				73AD6A1D25CACF3500DAE425 /* failure.json */,
+				73AD6A1C25CACF3500DAE425 /* success.json */,
+			);
+			path = MTSDSDKTests;
+			sourceTree = "<group>";
+		};
+		73AD6A0025CAB29700DAE425 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				73AD69C225CA819C00DAE425 /* GitHubClient.swift */,
+				73AD69B825CA7DF200DAE425 /* MTSD.swift */,
+				73AD69C625CA865700DAE425 /* RestError.swift */,
+				73AD69B425CA7D9B00DAE425 /* RestRequest.swift */,
+				73AD69CA25CA926800DAE425 /* RestResponse.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73AD699325CA7D6000DAE425 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		73AD699725CA7D6000DAE425 /* MTSDSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73AD69AC25CA7D6000DAE425 /* Build configuration list for PBXNativeTarget "MTSDSDK" */;
+			buildPhases = (
+				73AD699325CA7D6000DAE425 /* Headers */,
+				73AD699425CA7D6000DAE425 /* Sources */,
+				73AD699525CA7D6000DAE425 /* Frameworks */,
+				73AD699625CA7D6000DAE425 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTSDSDK;
+			productName = MTSDSDK;
+			productReference = 73AD699825CA7D6000DAE425 /* MTSDSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73AD69A025CA7D6000DAE425 /* MTSDSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73AD69AF25CA7D6000DAE425 /* Build configuration list for PBXNativeTarget "MTSDSDKTests" */;
+			buildPhases = (
+				73AD699D25CA7D6000DAE425 /* Sources */,
+				73AD699E25CA7D6000DAE425 /* Frameworks */,
+				73AD699F25CA7D6000DAE425 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73AD69A425CA7D6000DAE425 /* PBXTargetDependency */,
+			);
+			name = MTSDSDKTests;
+			productName = MTSDSDKTests;
+			productReference = 73AD69A125CA7D6000DAE425 /* MTSDSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73AD69E925CAB15D00DAE425 /* MTSDSDKPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73AD69EF25CAB15D00DAE425 /* Build configuration list for PBXNativeTarget "MTSDSDKPackageDescription" */;
+			buildPhases = (
+				73AD69E625CAB15D00DAE425 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTSDSDKPackageDescription;
+			productName = MTSDSDKPackageDescription;
+			productReference = 73AD69EA25CAB15D00DAE425 /* MTSDSDKPackageDescription.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73AD698F25CA7D5F00DAE425 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					73AD699725CA7D6000DAE425 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					73AD69A025CA7D6000DAE425 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					73AD69E925CAB15D00DAE425 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = 73AD699225CA7D5F00DAE425 /* Build configuration list for PBXProject "MTSDSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73AD698E25CA7D5F00DAE425;
+			productRefGroup = 73AD699925CA7D6000DAE425 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73AD699725CA7D6000DAE425 /* MTSDSDK */,
+				73AD69E925CAB15D00DAE425 /* MTSDSDKPackageDescription */,
+				73AD69A025CA7D6000DAE425 /* MTSDSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73AD699625CA7D6000DAE425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73AD699F25CA7D6000DAE425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73AD6A1F25CACF3500DAE425 /* failure.json in Resources */,
+				73AD6A1E25CACF3500DAE425 /* success.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73AD699425CA7D6000DAE425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73AD69CB25CA926800DAE425 /* RestResponse.swift in Sources */,
+				73AD69C725CA865700DAE425 /* RestError.swift in Sources */,
+				73AD69B525CA7D9B00DAE425 /* RestRequest.swift in Sources */,
+				73AD69B925CA7DF200DAE425 /* MTSD.swift in Sources */,
+				73AD69C325CA819C00DAE425 /* GitHubClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73AD699D25CA7D6000DAE425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73AD69D525CA9D5800DAE425 /* ParserTests.swift in Sources */,
+				73AD69A725CA7D6000DAE425 /* MTSDSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73AD69E625CAB15D00DAE425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73AD69FC25CAB17700DAE425 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73AD69A425CA7D6000DAE425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73AD699725CA7D6000DAE425 /* MTSDSDK */;
+			targetProxy = 73AD69A325CA7D6000DAE425 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		73AD69AA25CA7D6000DAE425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73AD69AB25CA7D6000DAE425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		73AD69AD25CA7D6000DAE425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CW298N32P4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MTSDSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onefatgiraffe.MTSDSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		73AD69AE25CA7D6000DAE425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CW298N32P4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MTSDSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onefatgiraffe.MTSDSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		73AD69B025CA7D6000DAE425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CW298N32P4;
+				INFOPLIST_FILE = MTSDSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onefatgiraffe.MTSDSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		73AD69B125CA7D6000DAE425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CW298N32P4;
+				INFOPLIST_FILE = MTSDSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onefatgiraffe.MTSDSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		73AD69F025CAB15D00DAE425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CW298N32P4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MTSDSDKPackageDescription/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onefatgiraffe.MTSDSDKPackageDescription;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		73AD69F125CAB15D00DAE425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CW298N32P4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MTSDSDKPackageDescription/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onefatgiraffe.MTSDSDKPackageDescription;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73AD699225CA7D5F00DAE425 /* Build configuration list for PBXProject "MTSDSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73AD69AA25CA7D6000DAE425 /* Debug */,
+				73AD69AB25CA7D6000DAE425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73AD69AC25CA7D6000DAE425 /* Build configuration list for PBXNativeTarget "MTSDSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73AD69AD25CA7D6000DAE425 /* Debug */,
+				73AD69AE25CA7D6000DAE425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73AD69AF25CA7D6000DAE425 /* Build configuration list for PBXNativeTarget "MTSDSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73AD69B025CA7D6000DAE425 /* Debug */,
+				73AD69B125CA7D6000DAE425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73AD69EF25CAB15D00DAE425 /* Build configuration list for PBXNativeTarget "MTSDSDKPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73AD69F025CAB15D00DAE425 /* Debug */,
+				73AD69F125CAB15D00DAE425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73AD698F25CA7D5F00DAE425 /* Project object */;
+}
