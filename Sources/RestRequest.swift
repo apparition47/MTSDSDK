@@ -102,7 +102,9 @@ extension RestRequest {
     
     func parse<T: Decodable>(_ data: Data) -> (T?, RestError?) {
         do {
-            let result = try JSONDecoder().decode(T.self, from: data)
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let result = try decoder.decode(T.self, from: data)
             #if DEBUG
             print(result)
             #endif

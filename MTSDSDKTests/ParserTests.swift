@@ -44,6 +44,7 @@ class ParserTests: XCTestCase {
     private func getStub<T: Decodable>(_ jsonFile: String, as: T.Type) -> T {
         let data = getStub(jsonFile)
         let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
         return try! decoder.decode(T.self, from: data)
     }
     

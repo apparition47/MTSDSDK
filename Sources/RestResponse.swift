@@ -14,12 +14,6 @@ struct GitHubRootResponse<T: Decodable>: Decodable {
     let totalCount: Int
     let incompleteResults: Bool
     let items: T
-
-    enum CodingKeys: String, CodingKey {
-        case totalCount = "total_count"
-        case incompleteResults = "incomplete_results"
-        case items
-    }
 }
 
 struct RestResponse<T> {
